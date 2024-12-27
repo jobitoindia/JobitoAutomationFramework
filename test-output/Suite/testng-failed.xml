@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)">
+    <groups>
+      <run>
+        <exclude name="RegPage"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.RegistrationTest">
+        <methods>
+          <include name="validateThePage"/>
+        </methods>
+      </class> <!-- tests.RegistrationTest -->
+      <class name="tests.HomeTest">
+        <methods>
+          <include name="tc3hm"/>
+          <include name="tc1hm"/>
+          <include name="setup"/>
+          <include name="tc4hm"/>
+          <include name="tc2hm"/>
+        </methods>
+      </class> <!-- tests.HomeTest -->
+      <class name="Base.CheckFunctionlity">
+        <methods>
+          <include name="AddCardPage"/>
+          <include name="LoginPage"/>
+          <include name="RegPage"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- Base.CheckFunctionlity -->
+      <class name="Base.MathOPerations">
+        <methods>
+          <include name="checkValidUser"/>
+          <include name="abc"/>
+          <include name="xyz"/>
+          <include name="checkInvalidUser"/>
+        </methods>
+      </class> <!-- Base.MathOPerations -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="tc2Login"/>
+          <include name="tc1Login"/>
+          <include name="tc4Login"/>
+          <include name="tc3Login"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
