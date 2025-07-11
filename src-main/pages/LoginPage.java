@@ -32,7 +32,9 @@ public class LoginPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
+	public boolean validateLoginPage() {
+		return driver.getCurrentUrl().contains("login");
+	}
 	
 	public void fillLoginDetails(String uname,String password) {
 		username.sendKeys(uname);

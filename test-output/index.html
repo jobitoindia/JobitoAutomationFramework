@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\lahub\AppData\Local\Temp\testng-eclipse--337975606\testng-customsuite.xml</span>
+                    <span>C:\Users\lahub\AppData\Local\Temp\testng-eclipse--1380030195\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,17 +101,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Base.MathOPerations" class="method navigator-link" hash-for-method="abc">abc</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="abc">abc</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Base.MathOPerations" class="method navigator-link" hash-for-method="postConditino">postConditino</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tc1Login">tc1Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Base.MathOPerations" class="method navigator-link" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tc2Login">tc2Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tc3Login">tc3Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -129,7 +134,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Base.MathOPerations</span>
+              <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -141,16 +146,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="postConditino">
-                  </a> <!-- postConditino -->
-                  <span class="method-name">postConditino</span>
+                  <a name="tc1Login">
+                  </a> <!-- tc1Login -->
+                  <span class="method-name">tc1Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="xyz">
-                  </a> <!-- xyz -->
-                  <span class="method-name">xyz</span>
+                  <a name="tc2Login">
+                  </a> <!-- tc2Login -->
+                  <span class="method-name">tc2Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc3Login">
+                  </a> <!-- tc3Login -->
+                  <span class="method-name">tc3Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,7 +170,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\lahub\AppData\Local\Temp\testng-eclipse--337975606\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\lahub\AppData\Local\Temp\testng-eclipse--1380030195\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,7 +179,7 @@
 &lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Base.MathOPerations&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -207,24 +219,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'abc')
-data.setCell(0, 2, 'Base.MathOPerations')
-data.setCell(0, 3, 14);
+data.setCell(0, 1, 'tc1Login')
+data.setCell(0, 2, 'tests.LoginTest')
+data.setCell(0, 3, 99);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'postConditino')
-data.setCell(1, 2, 'Base.MathOPerations')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'abc')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 15);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'xyz')
-data.setCell(2, 2, 'Base.MathOPerations')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'tc2Login')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 8);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc3Login')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 128 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,18 +266,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Base.MathOPerations</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">abc</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">3158 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3181 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">postConditino</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-name">tc3Login</span>
+                <span class="method-start">6247 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6259 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">xyz</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-name">tc1Login</span>
+                <span class="method-start">11269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc2Login</span>
+                <span class="method-start">14518 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

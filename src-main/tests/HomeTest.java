@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ public class HomeTest extends BaseClass {
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() {
 		initialization();
 		hm=new HomePage();

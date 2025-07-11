@@ -3,11 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="Base.MathOPerations">
+      <class name="tests.RegistrationTest">
         <methods>
-          <include name="abc"/>
+          <include name="setup"/>
+          <include name="validateThePage"/>
         </methods>
-      </class> <!-- Base.MathOPerations -->
+      </class> <!-- tests.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -14,13 +14,14 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	public String firstname;
 
 
 	public BaseClass() 
 	{
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream("E:\\Java_Development\\jobitoFRm\\src-main\\Config\\proper.properties");
+			fis = new FileInputStream("E:\\Java_Development\\jobitoFRm\\src-main\\Config\\CommonData.properties");
 			prop=new Properties();
 			prop.load(fis);
 		} catch (IOException e) {
@@ -35,7 +36,7 @@ public class BaseClass {
 
 		if(bName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\lahub\\OneDrive\\Desktop\\chromdriver_File\\chromedriver-win64\\chromedriver.exe");  // set the broswer exe path
+			System.setProperty("webdriver.chrome.driver", "E:\\JulyBatch\\chromedriver-win64 (13)\\chromedriver-win64\\chromedriver.exe");  // set the broswer exe path
 			driver=new ChromeDriver();
 		}
 		else if(bName.equals("firefox")) 
@@ -55,7 +56,7 @@ public class BaseClass {
 		}
 		else 
 		{
-			System.out.println("please give the browser name");
+			System.out.println("please give correct the browser name");
 		}
 
 		driver.get(prop.getProperty("url"));

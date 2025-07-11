@@ -10,7 +10,7 @@ import Base.BaseClass;
 public class RegistrationPage extends BaseClass {
 
 	@FindBy(xpath="//input[@name='emailOrPhone']")
-	private WebElement name;//=driver.findElement(By.xpath(""));
+	private WebElement name;//=driver.findElement(By.xpath("//input[@name='emailOrPhone']"));
 
 	@FindBy(xpath="//input[@name='fullName']")
 	private WebElement fullName;
@@ -33,7 +33,7 @@ public class RegistrationPage extends BaseClass {
 	}
 
 	public boolean validatePage() {
-		return driver.getCurrentUrl().contains("accounts");
+		return driver.getCurrentUrl().contains("emailsignup");
 	}
 
 	public void filltheDeails(String firstName,String LastName) {		

@@ -24,24 +24,27 @@ public class LoginTest extends BaseClass{
 		lg=new LoginPage();
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void tc1Login() {
-		
+		System.out.println("1");
 	}
 	
-	@Test
+	@Test(priority = 10)
 	public void tc2Login() {
-		
+		System.out.println("10");
+
 	}
 	
 	@Test
 	public void tc3Login() {
-		
+		System.out.println("5");
+
 	}
 	
 	@Test
-	public void tc4Login() {
-		
+	public void abc() {
+		System.out.println("4");
+
 	}
 
 }
